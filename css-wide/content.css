@@ -1,0 +1,51 @@
+.container > .content {
+    display: grid;
+    grid-template-columns: repeat(80, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-column: 9/29;
+    grid-row: 11/27;
+}
+
+.content-top {
+    grid-column: 9/29;
+    grid-row: 8/11;
+
+    font-size: 14px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-top > a {
+    color: rgb(62, 71, 105);
+    text-decoration: none;
+}
+
+.content-bottom {
+    grid-column: 1/29;
+    grid-row: 27/30;
+    color: rgb(62, 71, 105);
+
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-size: 18px;
+}
+
+.content-text {
+    grid-column: 6/74;
+    grid-row: 2/12;
+
+    font-family: Garamond;
+    font-size: 22px;
+
+    overflow: auto;
+}
