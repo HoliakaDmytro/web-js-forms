@@ -1,0 +1,50 @@
+/* Left */
+.aside-left {
+    display: grid;
+    grid-area: 5 / 1 / 9 / 38;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.aside-left > .content {
+    grid-column: 2/6;
+    grid-row: 2/12;
+
+    overflow: auto;
+}
+
+.aside-left > .content > .center {
+    color: rgb(62, 71, 105);
+}
+
+.menu-text {
+    font-family: Garamond;
+    font-size: 19px;
+}
+
+/* Right */
+.aside-right {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-area: 28 / 1 / 32 / 38;
+}
+
+.aside-right > .content {
+    grid-column: 2/6;
+    grid-row: 2/12;
+
+    overflow: auto;
+}
+
+.aside-right > .content > .center {
+    color: rgb(62, 71, 105);
+}
+
+.aside-right > .content > p {
+    font-family: Garamond;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
