@@ -11,4 +11,21 @@
 
     color: rgb(255, 255, 255);
     text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgb(52, 60, 88);
+    border-radius: 8px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.header-sign:hover {
+    background-color: rgb(37, 43, 63);
+}
+
+.header-sign:active {
+    background-color: rgb(24, 28, 41);
 }
