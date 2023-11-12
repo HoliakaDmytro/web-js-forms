@@ -49,7 +49,7 @@ document
         event.preventDefault();
         var number = document.getElementById("number").value;
         var divisors = getDivisors(number).join(", ");
-        alert("Дільники числа " + number + ": " + divisors);
+        alert("Divisors of a number " + number + ": " + divisors);
         saveDivisors(number, divisors);
     });
 
@@ -62,13 +62,11 @@ window.onload = function () {
             document.getElementById("numberForm").style.display = "none";
             var divisors = getCookie(lastSaved);
             var keep = confirm(
-                "Ви хочете зберегти ці дільники: " + divisors + "?"
+                "Do you want to keep these divisors: " + divisors + "?"
             );
             if (keep) {
                 setCookie(lastSaved + "_saved", "true", 7);
-                alert(
-                    "Дані збережені у cookies. Будь ласка, перезавантажте сторінку."
-                );
+                alert("The data is saved in cookies. Please reload the page.");
             } else {
                 setCookie(lastSaved, "", -1);
                 setCookie("last_saved", "", -1);

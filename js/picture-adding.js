@@ -62,7 +62,7 @@ function addImageToBlock(image) {
 
     const removeButton = document.createElement("button");
     removeButton.className = "remove-image";
-    removeButton.textContent = "Видалити";
+    removeButton.textContent = "Delete";
     removeButton.onclick = function () {
         removeImageFromStorage(image.id);
         imageContainer.remove();
