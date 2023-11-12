@@ -40,6 +40,11 @@
             media="(min-width: 769px)"
             href="./css-wide/aside.css"
         />
+        <link
+            rel="stylesheet"
+            media="(min-width: 769px)"
+            href="./css-wide/form.css"
+        />
 
         <link
             rel="stylesheet"
@@ -76,6 +81,11 @@
             media="(max-width: 768px)"
             href="./css-narrow/aside.css"
         />
+        <link
+            rel="stylesheet"
+            media="(max-width: 768px)"
+            href="./css-narrow/form.css"
+        />
 
         <link
             rel="apple-touch-icon"
@@ -99,10 +109,10 @@
     <body>
         <div class="container">
             <div class="header">
-                <div class="header-sign">
+                <div id="block-x" class="header-sign">
                     <header>
                         <h2>
-                            <i>Lab. work #3</i>
+                            <i>Lab. work #5</i>
                         </h2>
                     </header>
                 </div>
@@ -135,7 +145,7 @@
             </div>
 
             <div class="aside-right">
-                <div class="content">
+                <div id="block-4" class="content">
                     <div class="center">
                         <h2>
                             <i>Interesting facts:</i>
@@ -145,24 +155,36 @@
                     <p>
                         Rich History: Our company boasts a history of over 50
                         years, evolving from a small family venture into a
-                        global leader. Our unique Christmas ornaments are a
-                        blend of ancient traditions and modern craftsmanship;
+                        global leader.
                     </p>
 
                     <p>
                         Worldwide Reach: Our Christmas ornaments are adored not
-                        only in the United States but across the globe. They
-                        find homes in numerous countries, and we take pride in
-                        our diverse international customer base. Artisan
+                        only in the United States but across the globe.
                     </p>
+                </div>
 
-                    <p>
-                        Collaboration: We cherish collaboration with artisans
-                        worldwide who employ traditional techniques to handcraft
-                        our ornaments. This collaboration maintains the
-                        authenticity of our products and guarantees exceptional
-                        quality.
-                    </p>
+                <div class="radio-container">
+                    <form>
+                        <label class="radio-label">
+                            <input
+                                type="radio"
+                                name="textTransform"
+                                value="capitalize"
+                                class="radio-input"
+                            />
+                            <span class="custom-radio"></span>Capitalize case
+                        </label>
+                        <label class="radio-label">
+                            <input
+                                type="radio"
+                                name="textTransform"
+                                value="initialcase"
+                                class="radio-input"
+                            />
+                            <span class="custom-radio"></span>Initial case
+                        </label>
+                    </form>
                 </div>
             </div>
 
@@ -178,7 +200,25 @@
                 </a>
             </div>
 
-            <div class="content"></div>
+            <div id="block-5" class="content-main">
+                <div class="number-form">
+                    <form id="numberForm" class="form-style">
+                        <input
+                            type="number"
+                            id="number"
+                            name="number"
+                            class="input-field"
+                            placeholder="Enter the number"
+                            required
+                        />
+                        <input
+                            type="submit"
+                            value="Confirm"
+                            class="submit-button"
+                        />
+                    </form>
+                </div>
+            </div>
 
             <div class="content-bottom">
                 <h2>Incredible discounts on the eve of Christmas</h2>
@@ -194,5 +234,9 @@
                 </div>
             </div>
         </div>
+
+        <script src="./js/content-main.js"></script>
+        <script src="./js/aside-right.js"></script>
+        <script src="./js/picture-adding.js"></script>
     </body>
 </html>
