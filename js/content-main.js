@@ -70,8 +70,8 @@ window.onload = function () {
                     "Дані збережені у cookies. Будь ласка, перезавантажте сторінку."
                 );
             } else {
-                setCookie(lastSaved, "", -1); // Видаляємо cookie з дільниками
-                setCookie("last_saved", "", -1); // Видаляємо cookie останнього збереження
+                setCookie(lastSaved, "", -1);
+                setCookie("last_saved", "", -1);
                 location.reload();
             }
         } else {
